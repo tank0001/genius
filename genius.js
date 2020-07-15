@@ -139,7 +139,7 @@ client.on("message", async message => {
   if (message.content === `${prefix}watchos`) {
     message.channel.send({embed: {
       color: 9552127,
-      title: "iOS Status",
+      title: "watchOS Status",
       fields: [{
           name: "Current distribution",
           value: "watchOS `6.2.8` (`17U63`) R. Jul. 15, 2020\nClick for [previous revisions](https://en.wikipedia.org/wiki/WatchOS#watchOS_6). ([Official](https://developer.apple.com/news/releases/))"
