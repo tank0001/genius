@@ -116,7 +116,7 @@ client.on("message", async message => {
       title: "iOS Status",
       fields: [{
           name: "Current distribution",
-          value: "iOS `13.5.1` (`17F80`) R. Jun. 1, 2020\nClick for [previous revisions](https://en.wikipedia.org/wiki/IOS_13#Updates). ([Official](https://developer.apple.com/news/releases/))"
+          value: "iOS `13.6` (`17G68`) R. Jul. 15, 2020\nClick for [previous revisions](https://en.wikipedia.org/wiki/IOS_13#Updates). ([Official](https://developer.apple.com/news/releases/))"
         },
         {
           name: "Distribution 13 Betas",
@@ -142,7 +142,7 @@ client.on("message", async message => {
       title: "iOS Status",
       fields: [{
           name: "Current distribution",
-          value: "watchOS `6.2.6` (`17T620`) R. Jun. 1, 2020\nClick for [previous revisions](https://en.wikipedia.org/wiki/WatchOS#watchOS_6). ([Official](https://developer.apple.com/news/releases/))"
+          value: "watchOS `6.2.8` (`17U63`) R. Jul. 15, 2020\nClick for [previous revisions](https://en.wikipedia.org/wiki/WatchOS#watchOS_6). ([Official](https://developer.apple.com/news/releases/))"
         },
         {
           name: "Distribution V6 Betas",
