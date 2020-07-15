@@ -90,7 +90,7 @@ client.on("message", async message => {
   }
 
   if (message.content === `${prefix}info`) {
-    message.channel.send("**Genius:tm:** is an Apple support archive assistant with frequently asked questions available upon request. Written in Discord.js by `tank#0001`. Genius contributors: `Isaac#0004`, `Fudge#0001`, `samsscreenrepair#0001`, `FoxRunTime#0346`, `sapphic wallflower#5186`, `Ber#0107`, `BytesAndCoffee#2233`, `ThatTonybo#0001` (Dev).");
+    message.channel.send("**Genius:tm:** is an Apple support archive assistant with frequently asked questions available upon request. Written in Discord.js by `tank#0001`. Genius contributors: `Isaac#0004`, `Fudge#0001`, `samsscreenrepair#0001`, `FoxRunTime#0346`, `sapphic wallflower#5186`, `Ber#0107`, `BytesAndCoffee#2233`.");
   }
 
   if (message.content === `${prefix}dfu`) {
@@ -139,7 +139,7 @@ client.on("message", async message => {
   if (message.content === `${prefix}watchos`) {
     message.channel.send({embed: {
       color: 9552127,
-      title: "watchOS Status",
+      title: "iOS Status",
       fields: [{
           name: "Current distribution",
           value: "watchOS `6.2.6` (`17T620`) R. Jun. 1, 2020\nClick for [previous revisions](https://en.wikipedia.org/wiki/WatchOS#watchOS_6). ([Official](https://developer.apple.com/news/releases/))"
@@ -219,25 +219,12 @@ const reactionPages = async (message, author, options, page, retries) => {
           const maxPage = (options.pages.length - 1);
           const restartLoop = async () => { await reactionPages(message, author, options, page, retries); }
 
-          if (reaction.emoji.name === options.emojis.firstPage) {
-              if (page === minPage) return restartLoop();
-
-              page = minPage;
-              message = await message.edit(options.pages[minPage]);
-              return restartLoop();
-          }
-
           if (reaction.emoji.name === options.emojis.previousPage) {
               if (page === minPage) return restartLoop();
 
               page--;
               message = await message.edit(options.pages[page]);
               return restartLoop();
-          }
-
-          if (reaction.emoji.name === options.emojis.delete) {
-              await message.delete();
-              return true;
           }
 
           if (reaction.emoji.name === options.emojis.nextPage) {
@@ -248,11 +235,6 @@ const reactionPages = async (message, author, options, page, retries) => {
               return restartLoop();
           }
 
-          if (reaction.emoji.name === options.emojis.lastPage) {
-              page = maxPage;
-              message = await message.edit(options.pages[maxPage]);
-              return restartLoop();      
-          }
       })
 
 
@@ -274,16 +256,13 @@ client.on('message', async (message) => {
   if (message.content === `${prefix}backuprestorehow`) {
 
       const emojis = {
-        firstPage: '⏮️',
         previousPage: '⬅️',
-        delete: '🗑️',
         nextPage: '➡️',
-        lastPage: '⏩'
       }
     
       const pages = [
-          {  embed: { footer: { text: "This is page 1 of 2. For the parent command, type $backuprestore" }, color: 9552127, title: 'Restore your device from an iCloud backup', description: '__Learn how to restore your device from a backup in iCloud or on your computer.__ \n\n`1.` Turn on your device. You should see a Hello screen. If you already set up your device, you need to erase all of its content before you can use these steps to restore from your backup. \n\n`2.` Follow the onscreen setup steps until you reach the Apps & Data screen, then tap Restore from iCloud Backup. \n\n`3`. Sign in to iCloud with your Apple ID. \n\n`4`. Choose a backup. Look at the date and size of each and pick the most relevant. After you choose, the transfer starts. If a message says that a newer version of software is required, follow the onscreen steps to update (If you don\'t see onscreen steps to help you update, [learn what to do](https://support.apple.com/en-ca/HT203434)). \n' } },
-          {  embed: { footer: { text: "This is page 2 of 2. For the parent command, type $backuprestore" }, color: 9552127, title: 'Restore your device from an iCloud backup (2)', description: '`5.` When asked, sign in with your Apple ID to restore your apps and purchases (If you\'ve purchased iTunes or App Store content using multiple Apple IDs, you\'ll be asked to sign in to each). If you can’t remember your password, you can tap Skip this Step and sign in later. But you won\'t be able to use the apps until you sign in with your Apple ID.\n\n`6.` Stay connected and wait for a progress bar to appear and complete. Depending on the size of the backup and the network speed, the progress bar might need a few minutes to an hour to complete. If you disconnect from Wi-Fi too soon, the progress will pause until you reconnect.\n\n`7.` Now you can finish setup and enjoy your device. Content like your apps, photos, music, and other information will continue to restore in the background for the next several hours or days, depending on the amount of information there is. Try to connect often to Wi-Fi and power to let the process complete.\n\n[Get help with restoring from your iCloud backup](https://support.apple.com/en-ca/HT203516).\n' } }
+          {  embed: { footer: { text: "This is page 1 of 2. The parent command is $backuprestore" }, color: 9552127, title: 'Restore your device from an iCloud backup', description: '__Learn how to restore your device from a backup in iCloud or on your computer.__ \n\n`1.` Turn on your device. You should see a Hello screen. If you already set up your device, you need to erase all of its content before you can use these steps to restore from your backup. \n\n`2.` Follow the onscreen setup steps until you reach the Apps & Data screen, then tap Restore from iCloud Backup. \n\n`3`. Sign in to iCloud with your Apple ID. \n\n`4`. Choose a backup. Look at the date and size of each and pick the most relevant. After you choose, the transfer starts. If a message says that a newer version of software is required, follow the onscreen steps to update (If you don\'t see onscreen steps to help you update, [learn what to do](https://support.apple.com/en-ca/HT203434)). \n\nUse the ➡️ button to proceed to page 2.\n' } },
+          {  embed: { footer: { text: "This is page 2 of 2. The parent command is $backuprestore" }, color: 9552127, title: 'Restore your device from an iCloud backup (2)', description: '`5.` When asked, sign in with your Apple ID to restore your apps and purchases (If you\'ve purchased iTunes or App Store content using multiple Apple IDs, you\'ll be asked to sign in to each). If you can’t remember your password, you can tap Skip this Step and sign in later. But you won\'t be able to use the apps until you sign in with your Apple ID.\n\n`6.` Stay connected and wait for a progress bar to appear and complete. Depending on the size of the backup and the network speed, the progress bar might need a few minutes to an hour to complete. If you disconnect from Wi-Fi too soon, the progress will pause until you reconnect.\n\n`7.` Now you can finish setup and enjoy your device. Content like your apps, photos, music, and other information will continue to restore in the background for the next several hours or days, depending on the amount of information there is. Try to connect often to Wi-Fi and power to let the process complete.\n\n[Get help with restoring from your iCloud backup](https://support.apple.com/en-ca/HT203516).\n\nUse the ⬅️ button to return to page 1.\n' } }
       ]
       
       const defaultPage = 0;
@@ -299,11 +278,8 @@ client.on('message', async (message) => {
       
       const msg = await message.channel.send(pages[defaultPage]);
 
-      await msg.react(emojis.firstPage);
       await msg.react(emojis.previousPage);
-      await msg.react(emojis.delete);
       await msg.react(emojis.nextPage);
-      await msg.react(emojis.lastPage);
 
       const options = {
         emojis,
