@@ -129,7 +129,7 @@ client.on("message", async message => {
       ],
       timestamp: new Date(),
       footer: {
-        text: "Last refresh July 9, 2020"
+        text: "Last refresh July 15, 2020"
       }
     }
   });
@@ -155,7 +155,7 @@ client.on("message", async message => {
       ],
       timestamp: new Date(),
       footer: {
-        text: "Last refresh July 9, 2020"
+        text: "Last refresh July 15, 2020"
       }
     }
   });
