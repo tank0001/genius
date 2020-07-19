@@ -474,7 +474,7 @@ if (message.content.toLowerCase() === `${prefix}help ipod`) {
 
   if (message.content.toLowerCase() === `${prefix}invite`) {
     message.react('732342713055182898');
-    message.author.send("Invite **Genius** to your server through <https://discord.com/oauth2/authorize?client_id=732400693566242918&scope=bot&permissions=51264>.");
+    message.author.send("Invite **Genius** to your server through <https://discord.com/oauth2/authorize?client_id=731603315032326235&scope=bot&permissions=51264>.");
   }
 
   if (message.content.toLowerCase() === `${prefix}version`) {
