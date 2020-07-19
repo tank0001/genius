@@ -217,7 +217,7 @@ if (message.content.toLowerCase() === `${prefix}help ipod`) {
   }
 
  if (message.content.toLowerCase() === `${prefix}ios beta`) {
-    message.channel.send("The **iPod Classic (1) ** was released by Apple on **DATE**. Capacity: 5, 10 GB. Connection: Firewire. Battery: 10h (audio). <LINK> ");
+    message.channel.send("Sign up for the **iOS 14 Developer & Public Betas** at <https://beta.apple.com/sp/betaprogram/>.");
   }
 
  if (message.content.toLowerCase() === `${prefix}iphone 5s`) {
@@ -260,7 +260,7 @@ if (message.content.toLowerCase() === `${prefix}help ipod`) {
     message.channel.send("The **iPhone 8 Plus** (`A1864 (with Qualcomm modem) A1897 (with Intel modem) A1898 (sold in Japan)`) is Apple's 11th Generation smartphone released on **September 22, 2017**. Predecessor: **iPhone 7, iPhone 7 Plus**, Successor: **iPhone X, iPhone SE 2020**. Colours: Space Gray, Silver, Gold, (Product) RED. Storage configurations: 62, 128, 246 GB [Discontinued 09/10/19]. <https://en.wikipedia.org/wiki/IPhone_8>.");
   }
 
- if (message.content.toLowerCase() === `${prefix}iphone s`) {
+ if (message.content.toLowerCase() === `${prefix}iphone x`) {
     message.channel.send("The **iPhone X** (`A1865 (with Qualcomm modem) A1901 (with Intel modem) A1902 (sold in Japan`) is Apple's 11th Generation smartphone released on **November 3, 2017**. Predecessor: **iPhone 7, iPhone 7 Plus**, Successor: **iPhone XS, iPhone XS Max**. Colours: Space Gray, Silver. Storage configurations: 64, 256 GB. <https://en.wikipedia.org/wiki/IPhone_X>.");
   }
 
