@@ -363,7 +363,7 @@ if (message.content.toLowerCase() === `${prefix}help ipod`) {
   }
 
   if (message.content.toLowerCase() === `${prefix}ipod nano 7`) {
-    message.channel.send("The **iPod Nano (Gen 7)** was released by Apple on **September 12, 2012**. Capacity: 5, 10 GB. Connection: Firewire. Battery: 30h (audio), 3.5h (video). (Reverted to tall form factor with larger 2.5 inch multi-touch screen. Clip removed. Video playback restored and Bluetooth added. Replaced 30-pin dock connector with new Lightning connector. Discontinued July 27, 2017.[1]) <https://en.wikipedia.org/wiki/IPod_Nano> ");
+    message.channel.send("The **iPod Nano (Gen 7)** was released by Apple on **September 12, 2012**. Capacity: 16 GB. Connection: USB. Battery: 30h (audio), 3.5h (video). (Reverted to tall form factor with larger 2.5 inch multi-touch screen. Clip removed. Video playback restored and Bluetooth added. Replaced 30-pin dock connector with new Lightning connector. Discontinued July 27, 2017.[1]) <https://en.wikipedia.org/wiki/IPod_Nano> ");
   }
 
   if (message.content.toLowerCase() === `${prefix}ipod shuffle 1`) {
