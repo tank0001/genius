@@ -383,31 +383,31 @@ if (message.content.toLowerCase() === `${prefix}help ipod`) {
   }
 
   if (message.content.toLowerCase() === `${prefix}ipod touch 1`) {
-    message.channel.send("The **iPod Touch (Gen 1)** was released by Apple on **September 5, 2007**. Capacity: 8, 16, 32 GB. Connection: Firewire. Battery: 22h (audio), 5h (video). (First iPod with Wi-Fi and a Multi-touch interface. Features Safari browser and wireless access to the iTunes Store and YouTube. 32 GB model later added. iOS 2.0 and App Store access required an upgrade fee.) <https://en.wikipedia.org/wiki/IPod_Touch> ");
+    message.channel.send("The **iPod Touch (Gen 1)** was released by Apple on **September 5, 2007**. Capacity: 8, 16, 32 GB. Connection: USB. Battery: 22h (audio), 5h (video). (First iPod with Wi-Fi and a Multi-touch interface. Features Safari browser and wireless access to the iTunes Store and YouTube. 32 GB model later added. iOS 2.0 and App Store access required an upgrade fee.) <https://en.wikipedia.org/wiki/IPod_Touch> ");
   }
 
   if (message.content.toLowerCase() === `${prefix}ipod touch 2`) {
-    message.channel.send("The **iPod Touch (Gen 2)** was released by Apple on **September 9, 2008**. Capacity: 8, 16, 32 GB. Connection: Firewire. Battery: 36h (audio), 6h (video). (New tapered chrome back with Nike+ functionality, volume buttons, and built-in speaker added. iOS 2.0 and App Store access standard. Bluetooth support added but not made active until iOS 3.0, which required an upgrade fee.) <https://en.wikipedia.org/wiki/IPod_Touch> ");
+    message.channel.send("The **iPod Touch (Gen 2)** was released by Apple on **September 9, 2008**. Capacity: 8, 16, 32 GB. Connection: USB. Battery: 36h (audio), 6h (video). (New tapered chrome back with Nike+ functionality, volume buttons, and built-in speaker added. iOS 2.0 and App Store access standard. Bluetooth support added but not made active until iOS 3.0, which required an upgrade fee.) <https://en.wikipedia.org/wiki/IPod_Touch> ");
   }
 
   if (message.content.toLowerCase() === `${prefix}ipod touch 3`) {
-    message.channel.send("The **iPod Touch (Gen 3)** was released by Apple on **September 9, 2009**. Capacity: 32, 64 GB. Connection: Firewire. Battery: 30h (audio), 6h (video). (Updated to include the upgraded internals from the iPhone 3GS; included Voice Control support and bundled remote earphones.) <https://en.wikipedia.org/wiki/IPod_Touch> ");
+    message.channel.send("The **iPod Touch (Gen 3)** was released by Apple on **September 9, 2009**. Capacity: 32, 64 GB. Connection: USB. Battery: 30h (audio), 6h (video). (Updated to include the upgraded internals from the iPhone 3GS; included Voice Control support and bundled remote earphones.) <https://en.wikipedia.org/wiki/IPod_Touch> ");
   }
 
   if (message.content.toLowerCase() === `${prefix}ipod touch 4`) {
-    message.channel.send("The **iPod Touch (Gen 4)** was released by Apple on **September 1, 2010**. Capacity: 8, 16, 32, 64 GB. Connection: Firewire. Battery: 40h (audio), 7h (video). (New thinner design including two cameras for FaceTime and HD video recording, hold button moved to top right corner, Retina Display similar to iPhone 4, Apple A4 chip. White-colored version added on October 4, 2011.) <https://en.wikipedia.org/wiki/IPod_Touch> ");
+    message.channel.send("The **iPod Touch (Gen 4)** was released by Apple on **September 1, 2010**. Capacity: 8, 16, 32, 64 GB. Connection: USB. Battery: 40h (audio), 7h (video). (New thinner design including two cameras for FaceTime and HD video recording, hold button moved to top right corner, Retina Display similar to iPhone 4, Apple A4 chip. White-colored version added on October 4, 2011.) <https://en.wikipedia.org/wiki/IPod_Touch> ");
   }
 
   if (message.content.toLowerCase() === `${prefix}ipod touch 5`) {
-    message.channel.send("The **iPod Touch (Gen 5)** was released by Apple on **September 12, 2012**. Capacity: 16, 32, 64 GB. Connection: Firewire. Battery: 40h (audio), 8h (video). (New aluminum design with colored case options. Featured improved cameras along with A5 processor, Siri, and taller 4 inch Retina Display. First 16 GB models released have no color choices and no iSight camera, In early 2014 16 GB models were released that featured iSight cameras and color choices.) <https://en.wikipedia.org/wiki/IPod_Touch> ");
+    message.channel.send("The **iPod Touch (Gen 5)** was released by Apple on **September 12, 2012**. Capacity: 16, 32, 64 GB. Connection: USB. Battery: 40h (audio), 8h (video). (New aluminum design with colored case options. Featured improved cameras along with A5 processor, Siri, and taller 4 inch Retina Display. First 16 GB models released have no color choices and no iSight camera, In early 2014 16 GB models were released that featured iSight cameras and color choices.) <https://en.wikipedia.org/wiki/IPod_Touch> ");
   }
 
   if (message.content.toLowerCase() === `${prefix}ipod touch 6`) {
-    message.channel.send("The **iPod Touch (Gen 6)** was released by Apple on **July 15, 2015**. Capacity: 16, 32, 64, 128 GB. Connection: Firewire. Battery: 40h (audio), 8h (video). (Updated with a new lineup of six colors, a new 128 GB model, and improved internals. The improved internals feature new cameras and the A8 processor with M8 motion coprocessor, 1 GB of RAM (twice the amount of the previous generation), and 802.11ac Wi-Fi.) <https://en.wikipedia.org/wiki/IPod_Touch> ");
+    message.channel.send("The **iPod Touch (Gen 6)** was released by Apple on **July 15, 2015**. Capacity: 16, 32, 64, 128 GB. Connection: USB. Battery: 40h (audio), 8h (video). (Updated with a new lineup of six colors, a new 128 GB model, and improved internals. The improved internals feature new cameras and the A8 processor with M8 motion coprocessor, 1 GB of RAM (twice the amount of the previous generation), and 802.11ac Wi-Fi.) <https://en.wikipedia.org/wiki/IPod_Touch> ");
   }
 
   if (message.content.toLowerCase() === `${prefix}ipod touch 7`) {
-    message.channel.send("The **iPod Touch (Gen 7)** was released by Apple on **May 28, 2019**. Capacity: 32, 128, 256 GB. Connection: Firewire. Battery: 40h (audio), 8h (video). (Updated with a new 256 GB model, and an upgraded SoC from the A8 to the A10 Fusion. Also added support for features not previously supported on the 6th generation iPod touch, like AR and Group FaceTime.) <https://en.wikipedia.org/wiki/IPod_Touch> ");
+    message.channel.send("The **iPod Touch (Gen 7)** was released by Apple on **May 28, 2019**. Capacity: 32, 128, 256 GB. Connection: USB. Battery: 40h (audio), 8h (video). (Updated with a new 256 GB model, and an upgraded SoC from the A8 to the A10 Fusion. Also added support for features not previously supported on the 6th generation iPod touch, like AR and Group FaceTime.) <https://en.wikipedia.org/wiki/IPod_Touch> ");
   }
 
   if (message.content.toLowerCase() === `${prefix}ipod timeline`) {
