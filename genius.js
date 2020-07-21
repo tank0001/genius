@@ -319,7 +319,7 @@ if (message.content.toLowerCase() === `${prefix}help ipod`) {
   }
 
   if (message.content.toLowerCase() === `${prefix}ipod classic 4`) {
-    message.channel.send("The **iPod Classic (Gen 4, Standard)** was released by Apple on **July 19, 2004** (Photo, with colour display). Capacity: v. Connection: Firewire or USB. Battery: 12h (audio). (Adopted Click Wheel from iPod Mini, added charging through USB in addition to FireWire.) \n\nThe **iPod Classic (Gen 4, Photo) has capacities of 30, 40, 60 GB, while the **(Gen 4, Colour Display)** has capacities 20, 60 GB, with battery 15h (audio), 5h (slidewshow). (Premium spin-off of 4th generation iPod with color screen, plus picture viewing. Later reintegrated into main iPod line.) <https://en.wikipedia.org/wiki/IPod_Classic> ");
+    message.channel.send("The **iPod Classic (Gen 4, Standard)** was released by Apple on **July 19, 2004** (Photo, with colour display). Capacity: v. Connection: Firewire or USB. Battery: 12h (audio). (Adopted Click Wheel from iPod Mini, added charging through USB in addition to FireWire.) \n\nThe **iPod Classic (Gen 4, Photo)** has capacities of 30, 40, 60 GB, while the **(Gen 4, Colour Display)** has capacities 20, 60 GB, with battery 15h (audio), 5h (slidewshow). (Premium spin-off of 4th generation iPod with color screen, plus picture viewing. Later reintegrated into main iPod line.) <https://en.wikipedia.org/wiki/IPod_Classic> ");
   }
 
   if (message.content.toLowerCase() === `${prefix}ipod classic 5`) {
