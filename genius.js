@@ -311,7 +311,7 @@ if (message.content.toLowerCase() === `${prefix}help ipod`) {
   }
 
   if (message.content.toLowerCase() === `${prefix}ipod classic 2`) {
-    message.channel.send("The **iPod Classic (Gen 2)** was released by Apple on **July 17, 2002**. Capacity: 5, 20 GB. Connection: Firewire. Battery: 10h (audio). (Touch-sensitive wheel. FireWire port had a cover. Hold switch revised. Windows compatibility through Musicmatch.) <https://en.wikipedia.org/wiki/IPod_Classic> ");
+    message.channel.send("The **iPod Classic (Gen 2)** was released by Apple on **July 17, 2002**. Capacity: 10, 20 GB. Connection: Firewire. Battery: 10h (audio). (Touch-sensitive wheel. FireWire port had a cover. Hold switch revised. Windows compatibility through Musicmatch.) <https://en.wikipedia.org/wiki/IPod_Classic> ");
   }
 
   if (message.content.toLowerCase() === `${prefix}ipod classic 3`) {
