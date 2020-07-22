@@ -833,12 +833,12 @@ client.on("message", async message => {
         },
         {
           name: "Next iOS release",
-          value: "iOS `14.0 (2)` (`18A5319i`) R. Jul. 7,9, 2020\nClick for [previous revisions](https://en.wikipedia.org/wiki/IOS_14#Updates). ([Official](https://developer.apple.com/news/releases/))"
+          value: "iOS `14.0 (3)` (`AWAITING`) R. Jul. 22, 2020\nClick for [previous revisions](https://en.wikipedia.org/wiki/IOS_14#Updates). ([Official](https://developer.apple.com/news/releases/))"
         }
       ],
       timestamp: new Date(),
       footer: {
-        text: "Last refresh July 15, 2020"
+        text: "Last refresh July 22, 2020"
       }
     }
   });
@@ -879,12 +879,12 @@ client.on("message", async message => {
         },
         {
           name: "Next watchOS release",
-          value: "watchOS `7.0 (2)` (`18R5327h`) R. Jul. 7, 2020\nClick for [previous revisions](https://en.wikipedia.org/wiki/WatchOS#watchOS_7). ([Official](https://developer.apple.com/news/releases/))"
+          value: "watchOS `7.0 (3)` (`AWAITING`) R. Jul. 22, 2020\nClick for [previous revisions](https://en.wikipedia.org/wiki/WatchOS#watchOS_7). ([Official](https://developer.apple.com/news/releases/))"
         }
       ],
       timestamp: new Date(),
       footer: {
-        text: "Last refresh July 15, 2020"
+        text: "Last refresh July 22, 2020"
       }
     }
   });
