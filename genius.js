@@ -208,6 +208,10 @@ if (message.content.toLowerCase() === `${prefix}help ipod`) {
     message.channel.send("iOS Developer & Public __Betas__ can be uninstalled by following the instructions at <https://support.apple.com/en-us/HT203282#beta>. An __iCloud backup__ is highly recommended.");
   }
 
+ if (message.content.toLowerCase() === `${prefix}iphone dfu`) {
+    message.channel.send("**DFU** or **Device Firmware Upgrade** mode allows all devices to be restored from any state. Learn more how to enter DFU mode on any device at <https://www.theiphonewiki.com/wiki/DFU_Mode.>");
+  }
+
  if (message.content.toLowerCase() === `${prefix}ios factoryrestore`) {
     message.channel.send("A __factory restore__ erases the information and settings on your iPhone, iPad, or iPod and installs the latest version of iOS, iPadOS, or iPod software. Follow the steps at <https://support.apple.com/en-us/HT201252>.");
   }
