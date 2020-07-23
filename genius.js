@@ -173,7 +173,7 @@ if (message.content.toLowerCase() === `${prefix}help ipod`) {
   }
 
  if (message.content.toLowerCase() === `${prefix}ios alock`) {
-    message.channel.send("See <https://support.apple.com/en-us/HT201441>. If the __Activation Lock__ placed on a device you have purchased or one that has come into your possession **cannot** be removed by the previous owner, you must contact your local Apple Store (<https://www.apple.com/retail/>) with proof of purchase.");
+    message.channel.send("See <https://support.apple.com/en-us/HT201441>. If the __Activation Lock__ placed on a device you have purchased or one that has come into your possession **cannot** be removed by the previous owner, you must contact AppleCare with the appropriate documentation. ");
   }
 
  if (message.content.toLowerCase() === `${prefix}ios appdl`) {
