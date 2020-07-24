@@ -311,7 +311,7 @@ if (message.content.toLowerCase() === `${prefix}help ipod`) {
   }
 
   if (message.content.toLowerCase() === `${prefix}uncover`) {
-    message.channel.send("**unc0ver** is a jailbreak tool that relies on a patchable software exploit. It is currently working on all iOS versions between 11.0 and 13.5, on all devices. Current version: `5.2.1`. Install at <https://unc0ver.dev/>");
+    message.channel.send("**unc0ver** is a jailbreak tool that relies on a patchable software exploit. It is currently working on all iOS versions between 11.0 and 13.5, on all devices. Current version: `5.3.1`. Install at <https://unc0ver.dev/>");
   }
 
 // ALL IPOD COMMANDS ($ipod command)
