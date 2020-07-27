@@ -396,11 +396,11 @@ if (message.content.toLowerCase() === `${prefix}help ipod`) {
       title: "iPhone Battery Replacement (USA)",
       fields: [{
           name: "Screen repairs (out of warranty)",
-          value: "iPhone 11 Pro Max (`$329`), iPhone 11 Pro (`$279`), iPhone 11 (`$199`)\niPhone XS Max (`$329`), iPhone XS/X (`$279`), iPhone XR (`$199`)\niPhone 6/6S/7/8 Plus (`$169`), iPhone 6S/7/8 (`$149`)"
+          value: "iPhone 11 Pro Max (`$329`), iPhone 11 Pro (`$279`), iPhone 11 (`$199`)\niPhone XS Max (`$329`), iPhone XS/X (`$279`), iPhone XR (`$199`)\niPhone 6, 6S, 7, 8 Plus (`$169`), iPhone 6S, 7, 8 (`$149`)\niPhone 6, SE, 5C, 5S (`$129`)"
         },
         {
-          name: "input",
-          value: "input"
+          name: "Is your iPhone covered by AppleCare+?",
+          value: "AppleCare+ plans include up to 2 incidents of accidental damage coverage \nevery 24 months. Each incident has a service fee or a deductible.\nThe AppleCare+ fee for all models is `$29`."
         }
       ],
       footer: {
