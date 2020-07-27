@@ -108,6 +108,10 @@ if (message.content.toLowerCase() === `${prefix}help ipod`) {
         {
           name: "Available Information",
           value: "Contains: Model No. (`AXXXX`), Release Dates, Storage Options\n& Colour Options. Use `$iPhone DFU` for a DFU guide.\nWiki links contain known hardware issues.",
+        },
+        {
+          name: "iPhone Battery & Screen Repair Costs",
+          value: "For battery costs in your country, type `$iphone battery [country]`. Ex: `$iphone battery ca`\nFor screen repair costs, type `$iphone screen [country].`",
         }
       ],
       footer: {
@@ -300,6 +304,71 @@ if (message.content.toLowerCase() === `${prefix}help ipod`) {
   if (message.content.toLowerCase() === `${prefix}iphone se 2020`) {
     message.channel.send("The **iPhone SE 2020** (`A2275 (United States/Canada) A2296 (Global) A2298 (China)`) is Apple's 13th Generation smartphone released on **April 24, 2020**. Predecessor: **iPhone SE (1st Gen)**, Successor: **None**. Colours: Black, White, (Product) RED. Storage configurations: 64, 128, or 256GB. <https://www.apple.com/ca/iphone-se/>.");
   }
+
+// ALL iPHONE COMMON-ISSUE COMMANDS ($iphone commands)
+
+ if (message.content.toLowerCase() === `${prefix}iphone battery us`) {
+    message.channel.send({embed: {
+      color: 14723837,
+      title: "iPhone Battery Replacement (USA)",
+      fields: [{
+          name: "$0 (in-warranty, AppleCare+) or $69 (out of warranty)",
+          value: "iPhone X, iPhone XS, iPhone XS Max, iPhone XR, \niPhone 11 Pro Max, iPhone 11 Pro, iPhone 11"
+        },
+        {
+          name: "$0 (in-warranty, AppleCare+) or $49 (out of warranty)",
+          value: "iPhone SE (2020), iPhone SE, iPhone 6, iPhone 6 Plus, iPhone 6S, \niPhone 6S Plus, iPhone 7, iPhone 7 Plus, iPhone 8, iPhone 8 Plus, \nand all other (earlier) eligible iPhone models."
+        }
+      ],
+      footer: {
+        text: "All prices in $USD"
+    }
+  }
+  });
+  }
+
+  if (message.content.toLowerCase() === `${prefix}iphone battery ca`) {
+    message.channel.send({embed: {
+      color: 14723837,
+      title: "iPhone Battery Replacement (CA)",
+      fields: [{
+          name: "$0 (in-warranty, AppleCare+) or $89 (out of warranty)",
+          value: "iPhone X, iPhone XS, iPhone XS Max, iPhone XR, \niPhone 11 Pro Max, iPhone 11 Pro, iPhone 11"
+        },
+        {
+          name: "$0 (in-warranty, AppleCare+) or $65 (out of warranty)",
+          value: "iPhone SE (2020), iPhone SE, iPhone 6, iPhone 6 Plus, iPhone 6S, \niPhone 6S Plus, iPhone 7, iPhone 7 Plus, iPhone 8, iPhone 8 Plus, \nand all other (earlier) eligible iPhone models."
+        }
+      ],
+      footer: {
+        text: "All prices in $CAD"
+    }
+  }
+  });
+  }
+
+
+  if (message.content.toLowerCase() === `${prefix}iphone battery gb`) {
+    message.channel.send({embed: {
+      color: 14723837,
+      title: "iPhone Battery Replacement (GB)",
+      fields: [{
+          name: "£0 (in-warranty, AppleCare+) or £69 (out of warranty)",
+          value: "iPhone X, iPhone XS, iPhone XS Max, iPhone XR, \niPhone 11 Pro Max, iPhone 11 Pro, iPhone 11"
+        },
+        {
+          name: "£0 (in-warranty, AppleCare+) or £49 (out of warranty)",
+          value: "iPhone SE (2020), iPhone SE, iPhone 6, iPhone 6 Plus, iPhone 6S, \niPhone 6S Plus, iPhone 7, iPhone 7 Plus, iPhone 8, iPhone 8 Plus, \nand all other (earlier) eligible iPhone models."
+        }
+      ],
+      footer: {
+        text: "All prices in £GBP"
+    }
+  }
+  });
+  }
+
+
 
 // ALL JAILBREAK COMMANDS ($jailbreak command)
   if (message.content.toLowerCase() === `${prefix}jailbreak`) {
