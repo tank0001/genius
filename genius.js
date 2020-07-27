@@ -368,6 +368,46 @@ if (message.content.toLowerCase() === `${prefix}help ipod`) {
   });
   }
 
+  if (message.content.toLowerCase() === `${prefix}iphone battery aus`) {
+    message.channel.send({embed: {
+      color: 14723837,
+      title: "iPhone Battery Replacement (AUS)",
+      fields: [{
+          name: "AUD 0 (in-warranty, AppleCare+) or A$ 109 (out of warranty)",
+          value: "iPhone X, iPhone XS, iPhone XS Max, iPhone XR, \niPhone 11 Pro Max, iPhone 11 Pro, iPhone 11"
+        },
+        {
+          name: "AUD 0 (in-warranty, AppleCare+) or A$ 79 (out of warranty)",
+          value: "iPhone SE (2020), iPhone SE, iPhone 6, iPhone 6 Plus, iPhone 6S, \niPhone 6S Plus, iPhone 7, iPhone 7 Plus, iPhone 8, iPhone 8 Plus, \nand all other (earlier) eligible iPhone models."
+        }
+      ],
+      footer: {
+        text: "All prices in AUD"
+    }
+  }
+  });
+  }
+
+  if (message.content.toLowerCase() === `${prefix}iphone battery eu`) {
+    message.channel.send({embed: {
+      color: 14723837,
+      title: "iPhone Battery Replacement (GB)",
+      fields: [{
+          name: "£0 (in-warranty, AppleCare+) or £69 (out of warranty)",
+          value: "iPhone X, iPhone XS, iPhone XS Max, iPhone XR, \niPhone 11 Pro Max, iPhone 11 Pro, iPhone 11"
+        },
+        {
+          name: "£0 (in-warranty, AppleCare+) or £49 (out of warranty)",
+          value: "iPhone SE (2020), iPhone SE, iPhone 6, iPhone 6 Plus, iPhone 6S, \niPhone 6S Plus, iPhone 7, iPhone 7 Plus, iPhone 8, iPhone 8 Plus, \nand all other (earlier) eligible iPhone models."
+        }
+      ],
+      footer: {
+        text: "All prices in £GBP"
+    }
+  }
+  });
+  }
+
 // TEMPLATE INPUT EMBED COMMAND
 
   if (message.content.toLowerCase() === `${prefix}commandinput`) {
@@ -393,19 +433,16 @@ if (message.content.toLowerCase() === `${prefix}help ipod`) {
   if (message.content.toLowerCase() === `${prefix}iphone screen us`) {
     message.channel.send({embed: {
       color: 14723837,
-      title: "iPhone Battery Replacement (USA)",
+      title: "iPhone Screen Repair (USA)",
       fields: [{
           name: "Screen repairs (out of warranty)",
-          value: "iPhone 11 Pro Max (`$329`), iPhone 11 Pro (`$279`), iPhone 11 (`$199`)\niPhone XS Max (`$329`), iPhone XS/X (`$279`), iPhone XR (`$199`)\niPhone 6, 6S, 7, 8 Plus (`$169`), iPhone 6S, 7, 8 (`$149`)\niPhone 6, SE, 5C, 5S (`$129`)"
+          value: "iPhone 11 Pro Max (`$329`), iPhone 11 Pro (`$279`), iPhone 11 (`$199`)\niPhone XS Max (`$329`), iPhone XS, X (`$279`), iPhone XR (`$199`)\niPhone 6, 6S, 7, 8 Plus (`$169`), iPhone 6S, 7, 8 (`$149`)\niPhone 6, SE, 5C, 5S (`$129`)"
         },
         {
           name: "Is your iPhone covered by AppleCare+?",
-          value: "AppleCare+ plans include up to 2 incidents of accidental damage coverage \nevery 24 months. Each incident has a service fee or a deductible.\nThe AppleCare+ fee for all models is `$29`."
+          value: "AppleCare+ plans include up to 2 incidents of accidental damage coverage \nevery 24 months. Each incident has a service fee or a deductible.\nThe AppleCare+ fee for all models is `$29`. Read more [here](https://support.apple.com/iphone/repair/service/screen-replacement)"
         }
       ],
-      footer: {
-        text: "input"
-    }
   }
   });
   }
