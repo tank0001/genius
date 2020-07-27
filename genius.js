@@ -368,7 +368,87 @@ if (message.content.toLowerCase() === `${prefix}help ipod`) {
   });
   }
 
+// TEMPLATE INPUT EMBED COMMAND
 
+  if (message.content.toLowerCase() === `${prefix}commandinput`) {
+    message.channel.send({embed: {
+      color: 14723837,
+      title: "iPhone Battery Replacement (GB)",
+      fields: [{
+          name: "input",
+          value: "input"
+        },
+        {
+          name: "input",
+          value: "input"
+        }
+      ],
+      footer: {
+        text: "input"
+    }
+  }
+  });
+  }
+
+  if (message.content.toLowerCase() === `${prefix}iphone screen us`) {
+    message.channel.send({embed: {
+      color: 14723837,
+      title: "iPhone Battery Replacement (USA)",
+      fields: [{
+          name: "Screen repairs (out of warranty)",
+          value: "iPhone 11 Pro Max (`$329`), iPhone 11 Pro (`$279`), iPhone 11 (`$199`)\niPhone XS Max (`$329`), iPhone XS/X (`$279`), iPhone XR (`$199`)\niPhone 6/6S/7/8 Plus (`$169`), iPhone 6S/7/8 (`$149`)"
+        },
+        {
+          name: "input",
+          value: "input"
+        }
+      ],
+      footer: {
+        text: "input"
+    }
+  }
+  });
+  }
+
+  if (message.content.toLowerCase() === `${prefix}iphone screen ca`) {
+    message.channel.send({embed: {
+      color: 14723837,
+      title: "iPhone Battery Replacement (CA)",
+      fields: [{
+          name: "input",
+          value: "input"
+        },
+        {
+          name: "input",
+          value: "input"
+        }
+      ],
+      footer: {
+        text: "input"
+    }
+  }
+  });
+  }
+
+  if (message.content.toLowerCase() === `${prefix}iphone screen gb`) {
+    message.channel.send({embed: {
+      color: 14723837,
+      title: "iPhone Battery Replacement (GB)",
+      fields: [{
+          name: "input",
+          value: "input"
+        },
+        {
+          name: "input",
+          value: "input"
+        }
+      ],
+      footer: {
+        text: "input"
+    }
+  }
+  });
+  }
 
 // ALL JAILBREAK COMMANDS ($jailbreak command)
   if (message.content.toLowerCase() === `${prefix}jailbreak`) {
