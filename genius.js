@@ -111,7 +111,7 @@ if (message.content.toLowerCase() === `${prefix}help ipod`) {
         },
         {
           name: "iPhone Battery & Screen Repair Costs",
-          value: "For battery repair costs, type `$iphone battery xy`.\nFor screen repair costs, type `$iphone screen [xy].`\nReplace `xy` with your country code (e.g. `ca`, `us`).",
+          value: "For battery repair costs, type `$iphone battery xy`\nFor screen repair costs, type `$iphone screen xy`\nReplace `xy` with your country code (e.g. `us`, `gb`).",
         }
       ],
       footer: {
