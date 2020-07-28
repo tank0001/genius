@@ -676,7 +676,7 @@ if (message.content.toLowerCase() === `${prefix}help ipod`) {
   }
 
   if (message.content.toLowerCase() === `${prefix}credits`) {
-    message.channel.send("Contributors: **Isaac#0004**, **Fudge#0001**, **samsscreenrepair#0001**, **FoxRunTime#0346**, **sapphic wallflower#5186**, **Ber#0107**, **BytesAndCoffee#2233**, **mattyjoe#2748**, **ThatTonybo#0001**.");
+    message.channel.send("Contributors: **Isaac#0004**, **Fudge#0001**, **samsscreenrepair#0001**, **FoxRunTime#0346**, **sapphic wallflower#5186**, **Ber#0107**, **BytesAndCoffee#2233**, **mattyjoe#2748**, **ThatTonybo#0001**, **iliyan61#0001**.");
   }
 
   if (message.content.toLowerCase() === `${prefix}invite`) {
