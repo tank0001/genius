@@ -305,6 +305,10 @@ if (message.content.toLowerCase() === `${prefix}help ipod`) {
     message.channel.send("The **iPhone SE 2020** (`A2275 (United States/Canada) A2296 (Global) A2298 (China)`) is Apple's 13th Generation smartphone released on **April 24, 2020**. Predecessor: **iPhone SE (1st Gen)**, Successor: **None**. Colours: Black, White, (Product) RED. Storage configurations: 64, 128, or 256GB. <https://www.apple.com/ca/iphone-se/>.");
   }
 
+  if (message.content.toLowerCase() === `${prefix}broccoli`) {
+    message.channel.send("https://i.imgur.com/62YjqRN.png");
+  }
+
 // ALL iPHONE COMMON-ISSUE COMMANDS ($iphone commands)
 
  if (message.content.toLowerCase() === `${prefix}iphone battery us`) {
@@ -430,6 +434,8 @@ if (message.content.toLowerCase() === `${prefix}help ipod`) {
   });
   }
 
+// SCREEN REPAIR COSTS
+
   if (message.content.toLowerCase() === `${prefix}iphone screen us`) {
     message.channel.send({embed: {
       color: 14723837,
@@ -450,22 +456,20 @@ if (message.content.toLowerCase() === `${prefix}help ipod`) {
   if (message.content.toLowerCase() === `${prefix}iphone screen ca`) {
     message.channel.send({embed: {
       color: 14723837,
-      title: "iPhone Battery Replacement (CA)",
+      title: "iPhone Screen Repair (CA)",
       fields: [{
-          name: "input",
-          value: "input"
+          name: "Screen repairs (out of warranty)",
+          value: "iPhone 11 Pro Max (`$429`), iPhone 11 Pro (`$365`), iPhone 11 (`$259`)\niPhone XS Max (`$429`), iPhone XS, X (`$365`), iPhone XR (`$259`)\niPhone 6, 6S, 7, 8 Plus (`$219`), iPhone 6S, 7, 8 (`$195`)\niPhone 6, SE, 5C, 5S (`$179`)"
         },
         {
-          name: "input",
-          value: "input"
+          name: "Is your iPhone covered by AppleCare+?",
+          value: "AppleCare+ plans include up to 2 incidents of accidental damage coverage \nevery 24 months. Each incident has a service fee or a deductible.\nThe AppleCare+ fee for all models is `$39`. Read more [here](https://support.apple.com/en-ca/iphone/repair/service/screen-replacement)"
         }
       ],
-      footer: {
-        text: "input"
-    }
   }
   });
   }
+
 
   if (message.content.toLowerCase() === `${prefix}iphone screen gb`) {
     message.channel.send({embed: {
