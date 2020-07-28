@@ -79,7 +79,7 @@ if (message.content.toLowerCase() === `${prefix}help ipod`) {
       title: "macOS Assistance",
       fields: [{
           name: "All help topics:",
-          value: "\n`$macOS` - macOS version\n`$mac battery` - Battery health\n`$mac displays` - Display mirroring\n`$mac GPU` - GPU & eGPU\n`$mac migration` - Migration Assistant\n`$mac recovery` - macOS Recovery\n`$mac reinstall` - macOS Reinstall\n`$mac restore` - macOS Restore\n`$mac storage` - Storage trimming\n`$mac timemachine` - Time Machine"
+          value: "\n`$macOS` - macOS version\n`$mac battery` - Battery health\n`$mac displays` - Display mirroring\n`$mac GPU` - GPU & eGPU\n`$mac nvram` - NVRAM reset\n`$mac migration` - Migration Assistant\n`$mac recovery` - macOS Recovery\n`$mac reinstall` - macOS Reinstall\n`$mac restore` - macOS Restore\n`$mac storage` - Storage trimming\n`$mac timemachine` - Time Machine"
         }
       ],
       footer: {
@@ -307,6 +307,10 @@ if (message.content.toLowerCase() === `${prefix}help ipod`) {
 
   if (message.content.toLowerCase() === `${prefix}broccoli`) {
     message.channel.send("https://i.imgur.com/62YjqRN.png");
+  }
+
+  if (message.content.toLowerCase() === `${prefix}itunes`) {
+    message.channel.send("If you're having trouble connecting to your device to iTunes on your Windows PC, it might be because you downloaded iTunes from the Microsoft Store instead of from Apple's website.\n\nYou can download iTunes here by clicking 'Windows' and then choosing either 32 or 64 bit, depending on what your machine requires @ <https://www.apple.com/itunes/>");
   }
 
 // ALL iPHONE COMMON-ISSUE COMMANDS ($iphone commands)
@@ -629,6 +633,10 @@ if (message.content.toLowerCase() === `${prefix}help ipod`) {
 
   if (message.content.toLowerCase() === `${prefix}mac gpu`) {
     message.channel.send("Your Thunderbolt 3-equipped Mac running macOS High Sierra 10.13.4 or later can access additional graphics performance by connecting to an external graphics processor (also known as an eGPU), using Thunderbolt 3. Here’s a guide for how to get started, and which GPUs are supported by macOS: <https://support.apple.com/en-us/HT208544>\n\n**Important note**: Nvidia GPUs are NOT supported by macOS at this time, only AMD. Windows via Boot Camp also does not support eGPUs reliably. There are some workarounds, but no guarantees that Windows on your Mac will reliably use the eGPU.\nHere is a very involved guide that may get an eGPU working in Boot Camp: <https://egpu.io/boot-camp-egpu-setup-guide/> (recommended for advanced users only)");
+  }
+
+  if (message.content.toLowerCase() === `${prefix}mac nvram`) {
+    message.channel.send("**NVRAM** controls sound volume, display resolution, startup-disk selection, time zone, and recent kernel panic information. If you experience issues related to these settings or others, resetting NVRAM might help. For example, if your Mac starts up from a disk other than the one selected in Startup Disk preferences, or a question mark icon briefly appears before your Mac starts up, you might need to reset NVRAM.\n\nShut down your Mac, then turn it on and immediately press and hold these four keys together: Option, Command, P, and R. You can release the keys after about 20 seconds, during which your Mac might appear to restart.\n\nOn Mac computers that play a startup sound, you can release the keys after the second startup sound. On Mac computers that have the Apple T2 Security Chip, you can release the keys after the Apple logo appears and disappears for the second time. (<https://support.apple.com/en-us/HT204063>)");
   }
 
 
