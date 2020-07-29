@@ -158,6 +158,10 @@ if (message.content.toLowerCase() === `${prefix}help ipod`) {
   }
 
 
+ if (message.content.toLowerCase() === `${prefix}samsscreenrepair`) {
+    message.channel.send("Whether you've cracked your iPhone screen, need help setting up some new tech, or just need some advice, we've got you covered. We'll pick up your device or repair it right in front of you! Visit **Sam's Screen Repair** @ <https://www.samsscreenrepair.com/> and <https://www.instagram.com/samsscreenrepair/>");
+  }
+
 // ALL IOS COMMANDS ($ios command)
 
  if (message.content.toLowerCase() === `${prefix}ios passcode`) {
