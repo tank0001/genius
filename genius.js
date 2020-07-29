@@ -79,7 +79,7 @@ if (message.content.toLowerCase() === `${prefix}help ipod`) {
       title: "macOS Assistance",
       fields: [{
           name: "All help topics:",
-          value: "\n`$macOS` - macOS version\n`$mac battery` - Battery health\n`$mac displays` - Display mirroring\n`$mac GPU` - GPU & eGPU\n`$mac nvram` - NVRAM reset\n`$mac migration` - Migration Assistant\n`$mac recovery` - macOS Recovery\n`$mac reinstall` - macOS Reinstall\n`$mac restore` - macOS Restore\n`$mac storage` - Storage trimming\n`$mac timemachine` - Time Machine"
+          value: "\n`$macOS` - macOS version\n`$mac battery` - Battery health\n`$mac bootcamp` - macOS Bootcamp\n`$mac displays` - Display mirroring\n`$mac GPU` - GPU & eGPU\n`$mac nvram` - NVRAM reset\n`$mac migration` - Migration Assistant\n`$mac recovery` - macOS Recovery\n`$mac reinstall` - macOS Reinstall\n`$mac restore` - macOS Restore\n`$mac storage` - Storage trimming\n`$mac timemachine` - Time Machine"
         }
       ],
       footer: {
@@ -478,22 +478,20 @@ if (message.content.toLowerCase() === `${prefix}help ipod`) {
   if (message.content.toLowerCase() === `${prefix}iphone screen gb`) {
     message.channel.send({embed: {
       color: 14723837,
-      title: "iPhone Battery Replacement (GB)",
+      title: "iPhone Screen Repair (GB)",
       fields: [{
-          name: "input",
-          value: "input"
+          name: "Screen repairs (out of warranty)",
+          value: "iPhone 11 Pro Max (`$429`), iPhone 11 Pro (`$365`), iPhone 11 (`$259`)\niPhone XS Max (`$429`), iPhone XS, X (`$365`), iPhone XR (`$259`)\niPhone 6, 6S, 7, 8 Plus (`$219`), iPhone 6S, 7, 8 (`$195`)\niPhone 6, SE, 5C, 5S (`$179`)"
         },
         {
-          name: "input",
-          value: "input"
+          name: "Is your iPhone covered by AppleCare+?",
+          value: "AppleCare+ plans include up to 2 incidents of accidental damage coverage \nevery 24 months. Each incident has a service fee or a deductible.\nThe AppleCare+ fee for all models is `$39`. Read more [here](https://support.apple.com/en-ca/iphone/repair/service/screen-replacement)"
         }
       ],
-      footer: {
-        text: "input"
-    }
   }
   });
   }
+
 
 // ALL JAILBREAK COMMANDS ($jailbreak command)
   if (message.content.toLowerCase() === `${prefix}jailbreak`) {
@@ -619,6 +617,12 @@ if (message.content.toLowerCase() === `${prefix}help ipod`) {
 
 
 // ALL MACOS COMMANDS
+
+
+
+  if (message.content.toLowerCase() === `${prefix}mac bootcamp`) {
+    message.channel.send("Boot Camp is a utility that comes with your Mac and lets you dual-boot with macOS and Windows. Download your copy of Windows 10, then let Boot Camp Assistant walk you through the installation steps. More info on how to get started here: <https://support.apple.com/en-us/HT201468>\n\nHere’s a guide for how to download and install the latest AMD graphics drivers for Windows on Mac models that use AMD graphics: <https://support.apple.com/en-us/HT208908>\n\nHere’s a guide for using Boot Camp Control Panel within Windows to change Boot Camp options and configure hardware: <https://support.apple.com/guide/bootcamp-control-panel/get-started-with-boot-camp-control-panel-bcmp1c70f878/6.1/mac/10.15>\n\nHere’s the main Boot Camp Support Page: <https://support.apple.com/boot-camp>");
+  }
 
 
   if (message.content.toLowerCase() === `${prefix}mac battery`) {
