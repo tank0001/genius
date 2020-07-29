@@ -79,7 +79,7 @@ if (message.content.toLowerCase() === `${prefix}help ipod`) {
       title: "macOS Assistance",
       fields: [{
           name: "All help topics:",
-          value: "\n`$macOS` - macOS version\n`$mac battery` - Battery health\n`$mac bootcamp` - macOS Bootcamp\n`$mac displays` - Display mirroring\n`$mac GPU` - GPU & eGPU\n`$mac nvram` - NVRAM reset\n`$mac migration` - Migration Assistant\n`$mac recovery` - macOS Recovery\n`$mac reinstall` - macOS Reinstall\n`$mac restore` - macOS Restore\n`$mac storage` - Storage trimming\n`$mac timemachine` - Time Machine"
+          value: "\n`$macOS` - macOS version\n`$mac battery` - Battery health\n`$mac bootcamp` - macOS Bootcamp\n`$mac SMC` - reset SMC\n`$mac displays` - Display mirroring\n`$mac GPU` - GPU & eGPU\n`$mac nvram` - NVRAM reset\n`$mac migration` - Migration Assistant\n`$mac recovery` - macOS Recovery\n`$mac reinstall` - macOS Reinstall\n`$mac restore` - macOS Restore\n`$mac storage` - Storage trimming\n`$mac timemachine` - Time Machine"
         }
       ],
       footer: {
@@ -619,6 +619,10 @@ if (message.content.toLowerCase() === `${prefix}help ipod`) {
 // ALL MACOS COMMANDS
 
 
+
+  if (message.content.toLowerCase() === `${prefix}mac smc`) {
+    message.channel.send("Resetting the **system management controller (SMC)** can resolve certain issues related to power, battery, fans, and other features. Here is a guide for how to reset SMC on different Macs: <https://support.apple.com/en-us/HT201295>\n\nNOTE: The process is different depending on whether your Mac has the T2 Security Chip or not, and whether it is a notebook or a desktop. Read the guide CAREFULLY and follow the correct procedure for your Mac.");
+  }
 
   if (message.content.toLowerCase() === `${prefix}mac bootcamp`) {
     message.channel.send("Boot Camp is a utility that comes with your Mac and lets you dual-boot with macOS and Windows. Download your copy of Windows 10, then let Boot Camp Assistant walk you through the installation steps. More info on how to get started here: <https://support.apple.com/en-us/HT201468>\n\nHere’s a guide for how to download and install the latest AMD graphics drivers for Windows on Mac models that use AMD graphics: <https://support.apple.com/en-us/HT208908>\n\nHere’s a guide for using Boot Camp Control Panel within Windows to change Boot Camp options and configure hardware: <https://support.apple.com/guide/bootcamp-control-panel/get-started-with-boot-camp-control-panel-bcmp1c70f878/6.1/mac/10.15>\n\nHere’s the main Boot Camp Support Page: <https://support.apple.com/boot-camp>");
