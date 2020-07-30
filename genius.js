@@ -14,6 +14,8 @@ client.on("message", async message => {
   }
 
   let args = message.content.slice(prefix.length).trim().split(/ +/g);
+  let ms = ms = require('ms');
+
 
   message.flags = [];
   while (args[0] && args[0][0] === "$") {
