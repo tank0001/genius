@@ -49,7 +49,7 @@ client.on("message", async message => {
       if (!role) return message.channel.send('Couldn\'t find the blacklist role')
       member.roles.remove(role.id);
       message.channel.send(`**${member.user.tag}** is no longer blacklisted from the Genius Bar.`)
-}
+}}
 
 // HELP COMMANDS
 
