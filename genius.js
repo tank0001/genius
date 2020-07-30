@@ -28,7 +28,7 @@ if (message.content.startsWith("blacklist")) {
     return message.channel.send("Can't run this command");
   }
   
-  let ms = ms = require('ms');
+  let ms = require('ms');
   let user = message.guild.member(message.mentions.users.first()) || message.guild.members.cache.get(args[0]);
   if (!user) return message.channel.send("Please mention the user.");
   // Optional:
