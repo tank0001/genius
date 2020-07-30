@@ -23,7 +23,7 @@ client.on("message", async message => {
 
 // SUPPORT CHANNELS BLACKLIST
 
-if (message.content.startsWith("blacklist")) {
+if (message.content.startsWith("$blacklist")) {
   if (!message.member.hasPermission("MUTE_MEMBERS")) {
     return message.channel.send("Can't run this command");
   }
@@ -38,8 +38,7 @@ if (message.content.startsWith("blacklist")) {
   let bot = message.guild.members.cache.get(client.user.id).roles.highest;
   
   if (!role) return message.channel.send("Couldn't find the mute role.");
-  if (role.position > bot.position) return message.channel.send("The role is higher than me.");
-  
+    
   let time = args[1];
   
   if (!time) {
