@@ -9,9 +9,14 @@ client.on("message", async message => {
  if(message.author.bot) return;
 
 
+ if (message.content.toLowerCase() === `${prefix}inputtest`) {
+    message.channel.send("output");
+  }
+
+
 // SUPPORT CHANNELS BLACKLIST
 
-if (message.startsWith(prefix + "blacklist")) {
+if (message.content.startsWith(prefix + "blacklist")) {
   if (!message.member.hasPermission("MUTE_MEMBERS")) {
     return message.channel.send("Can't run this command :woozy_face:");
   }
@@ -47,7 +52,7 @@ if (message.startsWith(prefix + "blacklist")) {
   }
 }
 
-if (message.startsWith(prefix + "whitelist")) {
+if (message.content.startsWith(prefix + "whitelist")) {
   if (!message.member.hasPermission("MUTE_MEMBERS")) {
     return message.channel.send("You don't have any permissions to do this: Manage Messages/Mute Members/Admin");
   }
