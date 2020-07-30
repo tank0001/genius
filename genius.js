@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
 const { token, prefix } = require('./config.json');
 const client = new Discord.Client();
+const ms = require('ms');
 
 
 client.on("message", async message => {
