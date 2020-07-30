@@ -35,7 +35,7 @@ client.on("message", async message => {
 
          member.roles.add(role.id);
          
-         message.channel.send(`$member.user.tag has been blacklisted from the Genius Bar for ${ms(ms(time))}`)
+         message.channel.send(`${member.user.tag} has been blacklisted from the Genius Bar for ${ms(ms(time))}`)
 
          setTimeout( function () {
              member.roles.remove(role.id);
