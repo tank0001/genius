@@ -30,7 +30,7 @@ if (message.content.startsWith(prefix + "mute")) {
   if (!message.member.hasPermission("MUTE_MEMBERS")) {
     return message.channel.send("You don't have any permissions to do this");
   }
-  let ms = require('ms');
+  let ms = require('ms')
   let user = message.guild.member(message.mentions.users.first()) || message.guild.members.cache.get(args[0]);
   if (!user) return message.channel.send("You need to mention the user.");
   // Optional:
@@ -55,7 +55,7 @@ if (message.content.startsWith(prefix + "mute")) {
     let timer = setTimeout(function() {
       user.roles.remove(role.id).catch(err => message.channel.send(`Something went wrong: ${err}`));
       message.channel.send(`${user.user.tag} is now unmuted.`);
-    }, ms(time))
+    })
     
     client.mute.set(user.user.id, timer);
     message.channel.send(`${user.user.tag} is now muted for **${ms(ms(time), {long: true})}**`);
