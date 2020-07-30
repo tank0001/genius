@@ -3,6 +3,9 @@ const { token, prefix } = require('./config.json');
 const client = new Discord.Client();
 
 
+
+client.mute = new Map();
+
 client.on("message", async message => {
 
   client.user.setPresence({ activity: { name: '$help' }, status: 'online' })
@@ -23,14 +26,13 @@ client.on("message", async message => {
 
 // SUPPORT CHANNELS BLACKLIST
 
-if (message.content.startsWith("$blacklist")) {
+if (msg.startsWith(prefix + "mute")) {
   if (!message.member.hasPermission("MUTE_MEMBERS")) {
-    return message.channel.send("Can't run this command");
+    return message.channel.send("You don't have any permissions to do this");
   }
   
-  let ms = require('ms');
   let user = message.guild.member(message.mentions.users.first()) || message.guild.members.cache.get(args[0]);
-  if (!user) return message.channel.send("Please mention the user.");
+  if (!user) return message.channel.send("You need to mention the user.");
   // Optional:
   // if (user.id === client.user.id) return message.channel.send("You can't mute me.");
   // if (user.id === message.author.id) return message.channel.send("You can't mute yourself.");
@@ -38,7 +40,8 @@ if (message.content.startsWith("$blacklist")) {
   let bot = message.guild.members.cache.get(client.user.id).roles.highest;
   
   if (!role) return message.channel.send("Couldn't find the mute role.");
-    
+  if (role.position > bot.position) return message.channel.send("The role is higher than me.");
+  
   let time = args[1];
   
   if (!time) {
@@ -59,7 +62,7 @@ if (message.content.startsWith("$blacklist")) {
   }
 }
 
-if (message.content.startsWith(prefix + "whitelist")) {
+if (msg.startsWith(prefix + "unmute")) {
   if (!message.member.hasPermission("MUTE_MEMBERS")) {
     return message.channel.send("You don't have any permissions to do this: Manage Messages/Mute Members/Admin");
   }
