@@ -33,8 +33,8 @@ if (message.content.startsWith(prefix + "blacklist")) {
   // Optional:
   // if (user.id === client.user.id) return message.channel.send("You can't mute me.");
   // if (user.id === message.author.id) return message.channel.send("You can't mute yourself.");
-  let role = message.guild.roles.cache.find("Muted");
-  let bot = message.guild.members.cache.get(client.user.id).roles.highest;
+  let role = guild.roles.cache.find(r => r.name === "Muted");
+  let bot = guild.members.cache.get(client.user.id).roles.highest;
   
   if (!role) return message.channel.send("Couldn't find the mute role.");
   if (role.position > bot.position) return message.channel.send("The role is higher than me.");
