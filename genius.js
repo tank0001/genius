@@ -26,7 +26,7 @@ client.on("message", async message => {
 
 // SUPPORT CHANNELS BLACKLIST
 
-if (msg.startsWith(prefix + "mute")) {
+if (message.content.startsWith(prefix + "mute")) {
   if (!message.member.hasPermission("MUTE_MEMBERS")) {
     return message.channel.send("You don't have any permissions to do this");
   }
@@ -62,7 +62,7 @@ if (msg.startsWith(prefix + "mute")) {
   }
 }
 
-if (msg.startsWith(prefix + "unmute")) {
+if (message.content.startsWith(prefix + "unmute")) {
   if (!message.member.hasPermission("MUTE_MEMBERS")) {
     return message.channel.send("You don't have any permissions to do this: Manage Messages/Mute Members/Admin");
   }
