@@ -3,9 +3,6 @@ const { token, prefix } = require('./config.json');
 const client = new Discord.Client();
 
 
-
-client.mute = new Map();
-
 client.on("message", async message => {
 
   client.user.setPresence({ activity: { name: '$help' }, status: 'online' })
@@ -16,72 +13,39 @@ client.on("message", async message => {
     message.channel.send("output");
   }
 
-  let args = message.content.slice(prefix.length).trim().split(/ +/g);
 
-  message.flags = [];
-  while (args[0] && args[0][0] === "$") {
-    message.flags.push(args.shift().slice(1)); // Message Flags: -default, -ban, -parameter
+  let messageArray = message.content.split(" ");
+  let args = messageArray.slice(1);
+  let cmd = messageArray[0];
+
+  if (cmd === '$blacklist'){
+       if(message.member.hasPermission('MUTE_MEMBERS')){
+         var member = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
+         if(!args[0]) return message.channel.send('Specify a user.')
+
+         let role = message.guild.roles.cache.find(role => role.name === "Muted");
+
+         if (!role) return message.channel.send('Couldn\'t find the Muted role')
+
+         let time = args[1];
+         if (!time) {
+             return message.channel.send('Specify a duration.');
+         }
+
+         member.roles.add(role.id);
+         
+         message.channel.send(`$member.user.tag has been blacklisted from the Genius Bar for ${ms(ms(time))}`)
+
+         setTimeout( function () {
+             member.roles.remove(role.id);
+             message.channel.send(`${member.user.tag} is no longer blacklisted from the Genius Bar.`)
+         }, ms(time));
+
+       } else {
+           return message.channel.send(`Permissions available.`)
+       }
+
   }
-
-
-// SUPPORT CHANNELS BLACKLIST
-
-if (message.content.startsWith(prefix + "mute")) {
-  if (!message.member.hasPermission("MUTE_MEMBERS")) {
-    return message.channel.send("You don't have any permissions to do this");
-  }
-  let ms = require('ms')
-  let user = message.guild.member(message.mentions.users.first()) || message.guild.members.cache.get(args[0]);
-  if (!user) return message.channel.send("You need to mention the user.");
-  // Optional:
-  // if (user.id === client.user.id) return message.channel.send("You can't mute me.");
-  // if (user.id === message.author.id) return message.channel.send("You can't mute yourself.");
-  let role = message.guild.roles.cache.find(r => r.name === "Muted");
-  let bot = message.guild.members.cache.get(client.user.id).roles.highest;
-  
-  if (!role) return message.channel.send("Couldn't find the mute role.");
-  if (role.position > bot.position) return message.channel.send("The role is higher than me.");
-  
-  let time = args[1];
-  
-  if (!time) {
-    if (user.roles.cache.has(role.id)) return message.channel.send("The user is still muted.");
-    await (user.roles.add(role.id).catch(err => message.channel.send(`Something went wrong: ${err}`)))
-    return message.channel.send(`${user.user.tag} is now muted.`);
-  } else {
-    if (user.roles.cache.has(role.id)) return message.channel.send("The user is still muted.");
-    await (user.roles.add(role.id).catch(err => message.channel.send(`Something went wrong: ${err}`)))
-    
-    let timer = setTimeout(function() {
-      user.roles.remove(role.id).catch(err => message.channel.send(`Something went wrong: ${err}`));
-      message.channel.send(`${user.user.tag} is now unmuted.`);
-    })
-    
-    client.mute.set(user.user.id, timer);
-    message.channel.send(`${user.user.tag} is now muted for **${ms(ms(time), {long: true})}**`);
-  }
-}
-
-if (message.content.startsWith(prefix + "unmute")) {
-  if (!message.member.hasPermission("MUTE_MEMBERS")) {
-    return message.channel.send("You don't have any permissions to do this: Manage Messages/Mute Members/Admin");
-  }
-  
-  let user = message.guild.member(message.mentions.users.first()) || message.guild.members.cache.get(args[0]);
-  if (!user) return message.channel.send("You need to mention the user.");
-  
-  let role = message.guild.roles.cache.find(r => r.name === "Muted");
-  if (!role) return message.channel.send("Couldn't find the mute role.");
-  
-  if (!user.roles.cache.find(r => r.name === "Muted")) return message.channel.send("The user doesn't get muted.");
-  
-  await user.roles.remove(role.id).catch(err => message.channel.send(`Something went wrong: ${err}`));
-  await clearTimeout(client.mute.get(user.user.id));
-  await client.mute.delete(user.user.id);
-  await message.channel.send(`${user.user.tag} is now unmuted.`);
-}
-
-// END SUPPORT CHANNELS BLACKLIST
 
 
 // HELP COMMANDS
