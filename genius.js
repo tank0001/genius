@@ -21,6 +21,7 @@ if (message.content.startsWith(prefix + "blacklist")) {
     return message.channel.send("Can't run this command :woozy_face:");
   }
   
+  let args = message.content.slice(prefix.length).trim().split(/ +/g);
   let user = message.guild.member(message.mentions.users.first()) || message.guild.members.cache.get(args[0]);
   if (!user) return message.channel.send("Please mention the user.");
   // Optional:
