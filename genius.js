@@ -19,35 +19,37 @@ client.on("message", async message => {
   let args = messageArray.slice(1);
   let cmd = messageArray[0];
 
-  if (cmd === '$blacklist'){
+  if (cmd === 'blacklist'){
        if(message.member.hasPermission('MUTE_MEMBERS')){
          var member = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
          if(!args[0]) return message.channel.send('Specify a user.')
-
-         let role = message.guild.roles.cache.find(role => role.name === "Muted");
-
-         if (!role) return message.channel.send('Couldn\'t find the Muted role')
-
+         let role = message.guild.roles.cache.find(role => role.name === "Support Blacklist");
+         if (!role) return message.channel.send('Couldn\'t find the blacklist role')
          let time = args[1];
          if (!time) {
              return message.channel.send('Specify a duration.');
          }
-
          member.roles.add(role.id);
-         
-         message.channel.send(`${member.user.tag} has been blacklisted from the Genius Bar for ${ms(ms(time))}`)
-
+         message.channel.send(`**${member.user.tag}** has been blacklisted from the Genius Bar for ${ms(ms(time))}`)
          setTimeout( function () {
              member.roles.remove(role.id);
-             message.channel.send(`${member.user.tag} is no longer blacklisted from the Genius Bar.`)
+             message.channel.send(`**${member.user.tag}** is no longer blacklisted from the Genius Bar.`)
          }, ms(time));
-
        } else {
            return message.channel.send(`Permissions available.`)
        }
 
   }
 
+  if (cmd === 'clear'){
+    if(message.member.hasPermission('MUTE_MEMBERS')){
+      var member = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
+      if(!args[0]) return message.channel.send('Specify a user.')
+      let role = message.guild.roles.cache.find(role => role.name === "Support Blacklist");
+      if (!role) return message.channel.send('Couldn\'t find the blacklist role')
+      member.roles.remove(role.id);
+      message.channel.send(`**${member.user.tag}** is no longer blacklisted from the Genius Bar.`)
+}
 
 // HELP COMMANDS
 
