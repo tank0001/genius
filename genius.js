@@ -37,7 +37,6 @@ if (message.content.startsWith("blacklist")) {
   let bot = message.guild.members.get(client.user.id).roles.highest;
   
   if (!role) return message.channel.send("Couldn't find the mute role.");
-  if (role.position > bot.position) return message.channel.send("The role is higher than me.");
   
   let time = args[1];
   
