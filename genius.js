@@ -121,7 +121,7 @@ if (message.content.toLowerCase() === `${prefix}help ipod`) {
       title: "macOS Assistance",
       fields: [{
           name: "All help topics:",
-          value: "\n`$macOS` - macOS version\n`$mac battery` - Battery health\n`$mac bootcamp` - macOS Bootcamp\n`$mac SMC` - reset SMC\n`$mac displays` - Display mirroring\n`$mac GPU` - GPU & eGPU\n`$mac nvram` - NVRAM reset\n`$mac migration` - Migration Assistant\n`$mac recovery` - macOS Recovery\n`$mac reinstall` - macOS Reinstall\n`$mac restore` - macOS Restore\n`$mac storage` - Storage trimming\n`$mac timemachine` - Time Machine"
+          value: "\n`$macOS` - macOS version\n`$mac beta` - should I install?\n`$mac battery` - Battery health\n`$mac bootcamp` - macOS Bootcamp\n`$mac SMC` - reset SMC\n`$mac displays` - Display mirroring\n`$mac GPU` - GPU & eGPU\n`$mac nvram` - NVRAM reset\n`$mac migration` - Migration Assistant\n`$mac recovery` - macOS Recovery\n`$mac reinstall` - macOS Reinstall\n`$mac restore` - macOS Restore\n`$mac storage` - Storage trimming\n`$mac timemachine` - Time Machine"
         }
       ],
       footer: {
