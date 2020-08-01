@@ -49,7 +49,7 @@ client.on("message", async message => {
       if (!role) return message.channel.send('Couldn\'t find the blacklist role')
       member.roles.remove(role.id);
       message.channel.send(`**${member.user.tag}** is no longer blacklisted from the Genius Bar.`)
-}}
+}
 
 // HELP COMMANDS
 
@@ -665,6 +665,10 @@ if (message.content.toLowerCase() === `${prefix}help ipod`) {
 // ALL MACOS COMMANDS
 
 
+
+  if (message.content.toLowerCase() === `${prefix}mac beta`) {
+    message.channel.send("Should you install a Beta on your main macOS system?\n\nThe answer is no. Betas can have major issues that could render your system unusable. There is no way to roll it back without erasing your Mac’s internal drive, reinstalling macOS, then restoring from a Time Machine backup. It is always a better idea to install it onto an external drive and boot from it. That way you are leaving your main system untouched.\n\nAlso, do not install a Beta without a Time Machine Backup of your system from the previous version of macOS. EVER. You could lose all of your data if you need to restore to an earlier version of macOS.\n\nEnter `$mac timemachine` to learn about how to back up your Mac with Time Machine.");
+  }
 
   if (message.content.toLowerCase() === `${prefix}mac smc`) {
     message.channel.send("Resetting the **system management controller (SMC)** can resolve certain issues related to power, battery, fans, and other features. Here is a guide for how to reset SMC on different Macs: <https://support.apple.com/en-us/HT201295>\n\nNOTE: The process is different depending on whether your Mac has the T2 Security Chip or not, and whether it is a notebook or a desktop. Read the guide CAREFULLY and follow the correct procedure for your Mac.");
