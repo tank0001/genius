@@ -746,7 +746,7 @@ if (message.content.toLowerCase() === `${prefix}help ipod`) {
     message.channel.send("Running V `3.0.1` (stable)");
   }
 
-
+  }
 
 });
 
