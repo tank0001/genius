@@ -50,6 +50,7 @@ client.on("message", async message => {
       member.roles.remove(role.id);
       message.channel.send(`**${member.user.tag}** is no longer blacklisted from the Genius Bar.`)
 }
+}
 
 // HELP COMMANDS
 
@@ -744,8 +745,6 @@ if (message.content.toLowerCase() === `${prefix}help ipod`) {
 
   if (message.content.toLowerCase() === `${prefix}version`) {
     message.channel.send("Running V `3.0.1` (stable)");
-  }
-
   }
 
 });
