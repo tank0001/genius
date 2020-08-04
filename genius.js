@@ -1118,12 +1118,12 @@ client.on("message", async message => {
         },
         {
           name: "Next macOS release",
-          value: "macOS `11.0 (2)` (Big Sur) (`20A4300b`) R. Jul. 7, 2020\nClick for [previous revisions](https://en.wikipedia.org/wiki/MacOS_Catalina#Release_history). ([Official](https://developer.apple.com/news/releases/))"
+          value: "macOS `11.0 (4)` (Big Sur) (`20A5343i`) R. Aug. 4, 2020\nClick for [previous revisions](https://en.wikipedia.org/wiki/MacOS_Catalina#Release_history). ([Official](https://developer.apple.com/news/releases/))"
         }
       ],
       timestamp: new Date(),
       footer: {
-        text: "Last refresh July 15, 2020"
+        text: "Last refresh August 4, 2020"
       }
     }
   });
