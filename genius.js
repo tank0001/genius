@@ -1097,12 +1097,12 @@ client.on("message", async message => {
         },
         {
           name: "Next iOS release",
-          value: "iOS `14.0 (3)` (`18A5332f`) R. Jul. 22, 2020\nClick for [previous revisions](https://en.wikipedia.org/wiki/IOS_14#Updates). ([Official](https://developer.apple.com/news/releases/))"
+          value: "iOS `14.0 (4)` (`18A5342e`) R. Aug. 8, 2020\nClick for [previous revisions](https://en.wikipedia.org/wiki/IOS_14#Updates). ([Official](https://developer.apple.com/news/releases/))"
         }
       ],
       timestamp: new Date(),
       footer: {
-        text: "Last refresh July 22, 2020"
+        text: "Last refresh Aug 22, 2020"
       }
     }
   });
