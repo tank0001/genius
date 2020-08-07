@@ -103,7 +103,7 @@ if (message.content.toLowerCase() === `${prefix}help ipod`) {
         },
         {
          name: "Guide help topics:",
-         value: "\n`$ios 2fa` - iOS 2FA\n`$ios backuprestore` - Restore from backup\n`$ios faceid` - iOS Face ID\n`$ios passcode` - iOS passcode\n`$ios touchid` - iOS Touch ID\n\nAdd `guide` for instructions.\nEx: `$ios faceid guide`"
+         value: "\n`$ios 2fa` - iOS 2FA\n`ios bypass` - iCloud bypass\n`$ios backuprestore` - Restore from backup\n`$ios faceid` - iOS Face ID\n`$ios passcode` - iOS passcode\n`$ios touchid` - iOS Touch ID\n\nAdd `guide` for instructions.\nEx: `$ios faceid guide`"
       }
         
       ],
@@ -206,6 +206,11 @@ if (message.content.toLowerCase() === `${prefix}help ipod`) {
   }
 
 // ALL IOS COMMANDS ($ios command)
+
+
+ if (message.content.toLowerCase() === `${prefix}ios bypass guide`) {
+    message.channel.send("https://i.imgur.com/tatd6yS.png");
+  }
 
  if (message.content.toLowerCase() === `${prefix}ios passcode`) {
     message.channel.send("For better security, set a passcode that needs to be entered to unlock iPhone when you turn it on or wake it. Setting a passcode turns on data protection, which encrypts your iPhone data with 256-bit AES encryption. (Some apps may opt out of using data protection.) <https://support.apple.com/en-ca/guide/iphone/iph14a867ae/ios>");
