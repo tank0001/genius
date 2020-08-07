@@ -252,10 +252,6 @@ if (message.content.toLowerCase() === `${prefix}help ipod`) {
     message.channel.send("There is **no way** to bypass iCloud unlock.\n For __Activation Lock__, see <https://support.apple.com/en-us/HT201441>");
   }
 
- if (message.content.toLowerCase() === `${prefix}ios bypass guide`) {
-    message.channel.send("There is **no way** to bypass iCloud unlock.\n For __Activation Lock__, see <https://support.apple.com/en-us/HT201441>");
-  }
-
  if (message.content.toLowerCase() === `${prefix}ios bypasshack`) {
     message.channel.send("https://i.imgur.com/tatd6yS.png");
   }
