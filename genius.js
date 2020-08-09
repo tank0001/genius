@@ -261,11 +261,11 @@ if (message.content.toLowerCase() === `${prefix}help ipod`) {
   }
 
  if (message.content.toLowerCase() === `${prefix}iphone dfu`) {
-    message.channel.send("**DFU** or **Device Firmware Upgrade** mode allows all devices to be restored from any state. Learn more how to enter DFU mode on any device at <https://www.theiphonewiki.com/wiki/DFU_Mode.>");
+    message.channel.send("**DFU** or **Device Firmware Upgrade** mode allows all devices to be restored from any state. Learn more how to enter DFU mode on any device at <https://www.theiphonewiki.com/wiki/DFU_Mode>");
   }
 
  if (message.content.toLowerCase() === `${prefix}ios dfu`) {
-    message.channel.send("**DFU** or **Device Firmware Upgrade** mode allows all devices to be restored from any state. Learn more how to enter DFU mode on any device at <https://www.theiphonewiki.com/wiki/DFU_Mode.>");
+    message.channel.send("**DFU** or **Device Firmware Upgrade** mode allows all devices to be restored from any state. Learn more how to enter DFU mode on any device at <https://www.theiphonewiki.com/wiki/DFU_Mode>");
   }
 
 
