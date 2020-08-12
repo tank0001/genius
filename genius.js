@@ -1090,7 +1090,7 @@ client.on("message", async message => {
       title: "iOS Status",
       fields: [{
           name: "Current distribution",
-          value: "iOS `13.6` (`17G68`) R. Jul. 15, 2020\nClick for [previous revisions](https://en.wikipedia.org/wiki/IOS_13#Updates). ([Official](https://developer.apple.com/news/releases/))"
+          value: "iOS `13.6.1` (`17G80`) R. Aug. 12, 2020\nClick for [previous revisions](https://en.wikipedia.org/wiki/IOS_13#Updates). ([Official](https://developer.apple.com/news/releases/))"
         },
         {
           name: "Distribution 13 Betas",
@@ -1103,7 +1103,7 @@ client.on("message", async message => {
       ],
       timestamp: new Date(),
       footer: {
-        text: "Last refresh Aug 22, 2020"
+        text: "Last refresh Aug 12, 2020"
       }
     }
   });
