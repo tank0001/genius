@@ -122,7 +122,7 @@ if (message.content.toLowerCase() === `${prefix}help ipod`) {
       title: "macOS Assistance",
       fields: [{
           name: "All help topics:",
-          value: "\n`$macOS` - macOS version\n`$mac beta` - should I install?\n`$mac battery` - Battery health\n`$mac bootcamp` - macOS Bootcamp\n`$mac SMC` - reset SMC\n`$mac displays` - Display mirroring\n`$mac GPU` - GPU & eGPU\n`$mac nvram` - NVRAM reset\n`$mac migration` - Migration Assistant\n`$mac recovery` - macOS Recovery\n`$mac reinstall` - macOS Reinstall\n`$mac restore` - macOS Restore\n`$mac storage` - Storage trimming\n`$mac timemachine` - Time Machine"
+          value: "\n`$macOS` - macOS version\n`$mac beta` - should I install?\n`$mac battery` - Battery health\n`$mac bootcamp` - macOS Bootcamp\n`$mac SMC` - reset SMC\n`$mac shortcuts` - Accessibility\n`$mac displays` - Display mirroring\n`$mac GPU` - GPU & eGPU\n`$mac nvram` - NVRAM reset\n`$mac migration` - Migration Assistant\n`$mac recovery` - macOS Recovery\n`$mac reinstall` - macOS Reinstall\n`$mac restore` - macOS Restore\n`$mac storage` - Storage trimming\n`$mac timemachine` - Time Machine"
         }
       ],
       footer: {
@@ -667,6 +667,10 @@ if (message.content.toLowerCase() === `${prefix}help ipod`) {
 // ALL MACOS COMMANDS
 
 
+
+  if (message.content.toLowerCase() === `${prefix}mac shortcuts`) {
+    message.channel.send("By pressing certain key combinations, you can do things that normally need a mouse, trackpad, or other input device.\n\nHere’s a list of keyboard shortcuts for Mac: <https://support.apple.com/en-us/HT201236>\n\n*On keyboards made for Windows PCs, use the Alt key instead of Option, and the Windows logo key instead of Command.*");
+  }
 
   if (message.content.toLowerCase() === `${prefix}mac beta`) {
     message.channel.send("Should you install a Beta on your main macOS system?\n\nThe answer is no. Betas can have major issues that could render your system unusable. There is no way to roll it back without erasing your Mac’s internal drive, reinstalling macOS, then restoring from a Time Machine backup. It is always a better idea to install it onto an external drive and boot from it. That way you are leaving your main system untouched.\n\nAlso, do not install a Beta without a Time Machine Backup of your system from the previous version of macOS. EVER. You could lose all of your data if you need to restore to an earlier version of macOS.\n\nEnter `$mac timemachine` to learn about how to back up your Mac with Time Machine.");
