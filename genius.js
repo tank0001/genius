@@ -99,7 +99,7 @@ if (message.content.toLowerCase() === `${prefix}fortnite`) {
           value: "Apple, Inc. removed Epic Games' *Fortnite* following a breach of contract and App Store guidelines. Epic proceeded by filing a [complaint for injunctive relief](https://cdn2.unrealengine.com/apple-complaint-734589783.pdf), citing the 30% \"tax\" on Apps & In-App-Purchases (IAPS)."
         },
         {
-         name: "2. Apple's Developer Account Termination",
+         name: "2. Epic's Developer Account Termination",
          value: "Following a breach of contract, Apple has given Epic Games notice to comply with universal guidelines or have Epic's [Developer Account](https://developer.apple.com/) terminated. Epic followed this with a [motion for a temporary restraining order](https://cdn2.unrealengine.com/epic-v-apple-8-17-20-768927327.pdf)."
         },
         {
