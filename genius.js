@@ -92,7 +92,7 @@ if (message.content.toLowerCase() === `${prefix}help ipod`) {
 
 if (message.content.toLowerCase() === `${prefix}fortnite`) {
     message.channel.send({embed: {
-      color: 12519168,
+      color: 14723837,
       title: "Epic v. Apple",
       fields: [{
           name: "1. Epic's lawsuit",
@@ -109,7 +109,7 @@ if (message.content.toLowerCase() === `${prefix}fortnite`) {
         
       ],
       footer: {
-        text: "Build 0X8902"
+        text: "Spamming \#FreeFortnite will result in a ban."
     }
   }
   });
