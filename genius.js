@@ -90,6 +90,30 @@ if (message.content.toLowerCase() === `${prefix}help ipod`) {
 });
 }
 
+if (message.content.toLowerCase() === `${prefix}fortnite`) {
+    message.channel.send({embed: {
+      color: 12519168,
+      title: "Epic v. Apple",
+      fields: [{
+          name: "1. Epic's lawsuit",
+          value: "Apple, Inc. removed Epic Games' *Fortnite* following a breach of contract and App Store guidelines. Epic proceeded by filing a [complaint for injunctive relief](https://cdn2.unrealengine.com/apple-complaint-734589783.pdf), citing the 30% \"tax\" on Apps & In-App-Purchases (IAPS)."
+        },
+        {
+         name: "2. Apple's Developer Account Termination",
+         value: "Following a breach of contract, Apple has given Epic Games notice to comply with universal guidelines or have Epic's [Developer Account](https://developer.apple.com/) terminated. Epic followed this with a [motion for a temporary restraining order](https://cdn2.unrealengine.com/epic-v-apple-8-17-20-768927327.pdf)."
+        },
+        {
+         name: "What should I believe?",
+         value: "1. [App stores, trust and anti-trust (Benedict Evans)](https://www.ben-evans.com/benedictevans/2020/8/18/app-stores)\n2. [Apple's Developer Program License Agreement (John Gruber)](https://daringfireball.net/linked/2020/08/17/apple-developer-program-license-agreement)"
+      }
+        
+      ],
+      footer: {
+        text: "Build 0X8902"
+    }
+  }
+  });
+  }
 
 // IOS
 
