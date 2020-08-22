@@ -14,6 +14,10 @@ client.on("message", async message => {
     message.channel.send("output");
   }
 
+ if (message.content.toLowerCase() === `${prefix}wsib`) {
+    message.channel.send("Looking for purchase advice for your next iOS device? It's best to head over to <#722186483699810345>, so that your question doesn't get drowned out!");
+  }
+
 
   let messageArray = message.content.split(" ");
   let args = messageArray.slice(1);
