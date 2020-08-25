@@ -1126,16 +1126,16 @@ client.on("message", async message => {
         },
         {
           name: "Distribution 13 Betas",
-          value: "iOS `13.6 GM` (`17G68`) R. Jul. 9, 2020\nClick for [previous revisions](https://en.wikipedia.org/wiki/IOS_13#Updates). ([Official](https://developer.apple.com/news/releases/))"
+          value: "iOS `13.6.1 GM` (`17G80`) R. Aug. 12, 2020\nClick for [previous revisions](https://en.wikipedia.org/wiki/IOS_13#Updates). ([Official](https://developer.apple.com/news/releases/))"
         },
         {
           name: "Next iOS release",
-          value: "iOS `14.0 (4)` (`18A5342e`) R. Aug. 8, 2020\nClick for [previous revisions](https://en.wikipedia.org/wiki/IOS_14#Updates). ([Official](https://developer.apple.com/news/releases/))"
+          value: "iOS `14.0 (6)` (`18A5357e`) R. Aug. 25, 2020\nClick for [previous revisions](https://en.wikipedia.org/wiki/IOS_14#Updates). ([Official](https://developer.apple.com/news/releases/))"
         }
       ],
       timestamp: new Date(),
       footer: {
-        text: "Last refresh Aug 12, 2020"
+        text: "Last refresh Aug 25, 2020"
       }
     }
   });
