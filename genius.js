@@ -695,6 +695,9 @@ if (message.content.toLowerCase() === `${prefix}fortnite`) {
 // ALL MACOS COMMANDS
 
 
+  if (message.content.toLowerCase() === `${prefix}mac thunderbolt`) {
+    message.channel.send("Thunderbolt 3 uses a USB-C connector, but the type of connection is different from USB.\nThunderbolt 3 is a high bandwidth, PCIe-based data connection developed by Intel and Apple, allowing for 40 Gbps transfer speeds on each Thunderbolt 3 Bus. It also includes the DisplayPort protocol for video, up to two streams, as well as power delivery. A Thunderbolt 3 cable will always have a lightning bolt printed on the connector to differentiate it from USB-C.\n\nMacBook Pros that have four Thunderbolt 3 ports have two Thunderbolt busses, so the MacBook Pro supports a max of two Thunderbolt 3 connections at once. However, you can daisy chain up to 6 devices per connection. The two Thunderbolt 3 busses can be accessed from any of the four ports at any time.\n\nThere are two types of Thunderbolt 3 cables. Active Thunderbolt 3 cables support Thunderbolt at 40Gbps data transfer at lengths of up to 2m. Passive Thunderbolt 3 cables are only capable of 20Gbps data transfer at 1m or 2m lengths, but can achieve the full 40Gbps at a shorter cable length of 0.5m, and are generally less expensive than Active cables.\n\n");
+  }
 
   if (message.content.toLowerCase() === `${prefix}mac shortcuts`) {
     message.channel.send("By pressing certain key combinations, you can do things that normally need a mouse, trackpad, or other input device.\n\nHere’s a list of keyboard shortcuts for Mac: <https://support.apple.com/en-us/HT201236>\n\n*On keyboards made for Windows PCs, use the Alt key instead of Option, and the Windows logo key instead of Command.*");
