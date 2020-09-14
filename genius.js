@@ -726,6 +726,11 @@ if (message.content.toLowerCase() === `${prefix}fortnite`) {
   }
 
 
+  if (message.content.toLowerCase() === `${prefix}mac applecare`) {
+    message.channel.send("Your Mac purchase includes AppleCare, which is 90 days of complimentary technical support and a standard 1 year limited  warranty. This warranty covers any manufacturing defects or hardware problems not caused by the user.\n\nIt’s strongly recommended that you purchase Apple’s extended warranty, AppleCare+, which extends your coverage to 3 years from the purchase date, and also includes two incidents of accidental damage for an additional fee. You can buy AppleCare+ for your Mac within 60 days of your purchase, or at the time of purchase.\n\nMore info on AppleCare+ for Mac: <https://www.apple.com/support/products/mac/>\n\nCheck your coverage status here: <https://checkcoverage.apple.com/>");
+  }
+
+
   if (message.content.toLowerCase() === `${prefix}mac gpu`) {
     message.channel.send("Your Thunderbolt 3-equipped Mac running macOS High Sierra 10.13.4 or later can access additional graphics performance by connecting to an external graphics processor (also known as an eGPU), using Thunderbolt 3. Here’s a guide for how to get started, and which GPUs are supported by macOS: <https://support.apple.com/en-us/HT208544>\n\n**Important note**: Nvidia GPUs are NOT supported by macOS at this time, only AMD. Windows via Boot Camp also does not support eGPUs reliably. There are some workarounds, but no guarantees that Windows on your Mac will reliably use the eGPU.\nHere is a very involved guide that may get an eGPU working in Boot Camp: <https://egpu.io/boot-camp-egpu-setup-guide/> (recommended for advanced users only)");
   }
